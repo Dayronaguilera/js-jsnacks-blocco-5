@@ -52,6 +52,7 @@ var schoolOfRock = [
 console.log(schoolOfRock);
 var ulStudents = " ";
 
+
 for (var i = 0; i < schoolOfRock.length; i++) {
 
    var description =  prompt("Descrivi lo studente!")// chidiamo all'utente di descrivere un suo compagno!
@@ -59,7 +60,7 @@ for (var i = 0; i < schoolOfRock.length; i++) {
 
    schoolOfRock[i].descrizione = descriptions;
 
-   
+   ulStudents += "<tr>";
    ulStudents += "<td>";
    ulStudents += schoolOfRock[i]["name"] + " ";
    ulStudents += "</td>";
@@ -74,9 +75,8 @@ for (var i = 0; i < schoolOfRock.length; i++) {
 
    ulStudents += "<td>";
    ulStudents += schoolOfRock[i]["descrizione"] + " ";
-   ulStudents += "</td> " + "<br/>";
-   
-
+   ulStudents += "</td>";
+   ulStudents += "</tr>";
 }
 listStudents.innerHTML = ulStudents;
 
